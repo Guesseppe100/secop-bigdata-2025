@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Databricks / local data
+data/layer0_raw/*
+data/bronze/*
+data/silver/*
+data/gold/*
+outputs/logs/*
+outputs/reports/*
+
+# Keep folder structure
+!data/layer0_raw/.gitkeep
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+!outputs/logs/.gitkeep
+!outputs/reports/.gitkeep
+
+# Secrets
+.env
+*.key
+*.pem
+secrets.*
+
+# OS files
+.DS_Store
+Thumbs.db

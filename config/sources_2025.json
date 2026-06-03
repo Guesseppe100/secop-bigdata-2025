@@ -1,0 +1,29 @@
+{
+  "analysis_year": 2025,
+  "start_date": "2025-01-01T00:00:00",
+  "end_date": "2026-01-01T00:00:00",
+  "batch_size_dev": 1000,
+  "batch_size_prod": 50000,
+  "sources": {
+    "contratos": {
+      "description": "SECOP II contracts source",
+      "type": "api",
+      "layer": "layer0_raw"
+    },
+    "adiciones": {
+      "description": "SECOP II contract additions source",
+      "type": "api",
+      "layer": "layer0_raw"
+    },
+    "ejecucion": {
+      "description": "SECOP II contract execution source",
+      "type": "api",
+      "layer": "layer0_raw"
+    },
+    "divipola": {
+      "description": "Territorial normalization source",
+      "type": "api",
+      "layer": "layer0_raw"
+    }
+  }
+}
