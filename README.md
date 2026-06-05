@@ -10,7 +10,7 @@
 
 ## Descripción del proyecto
 
-Este proyecto implementa una arquitectura de datos orientada al análisis de información pública de contratación estatal proveniente del SECOP para el periodo 2025. El proceso fue desarrollado bajo un enfoque progresivo, iniciando con pruebas de ingesta en lotes pequeños y escalando posteriormente hacia procesos de limpieza, integración, análisis textual, priorización contractual, modelado NoSQL en MongoDB y visualización mediante dashboard.
+Este proyecto implementa una arquitectura de datos orientada al análisis de información pública de contratación estatal proveniente del SECOP para el periodo 2025-2026. El proceso fue desarrollado bajo un enfoque progresivo, iniciando con pruebas de ingesta en lotes pequeños y escalando posteriormente hacia procesos de limpieza, integración, análisis textual, priorización contractual, modelado NoSQL en MongoDB y visualización mediante dashboard.
 
 La solución utiliza **Databricks Free Edition**, **Apache Spark**, **MongoDB Atlas**, **MongoDB Charts** y **GitHub** como herramientas principales para procesamiento distribuido, almacenamiento documental, visualización y control de versiones.
 
@@ -18,7 +18,7 @@ La solución utiliza **Databricks Free Edition**, **Apache Spark**, **MongoDB At
 
 ## Objetivo general
 
-Construir una canalización de datos escalable, documentada y reproducible para obtener, procesar, integrar, analizar y visualizar información pública de contratación estatal del SECOP durante el periodo 2025.
+Construir una canalización de datos escalable, documentada y reproducible para obtener, procesar, integrar, analizar y visualizar información pública de contratación estatal del SECOP durante el periodo 2025-2026.
 
 ---
 
@@ -488,6 +488,7 @@ Debido al límite de almacenamiento de MongoDB Atlas Free Tier, se cargó una mu
 - MongoDB Atlas Free Tier tiene restricciones de almacenamiento.
 - La detección de temas se basa en reglas de palabras clave, por lo que puede generar falsos positivos o falsos negativos.
 - El índice de prioridad es descriptivo y no constituye evidencia de irregularidad contractual.
+- Por espacio en MongoDB, se tuvo que ajustar al tamaño del archivo para poder realizar este proyecto (50000 datos)
 - Algunos campos pueden estar incompletos o presentar inconsistencias desde la fuente original.
 - El dashboard depende de la correcta actualización de las colecciones en MongoDB.
 - La carga completa del universo de datos puede requerir un cluster de mayor capacidad.
