@@ -1,0 +1,1 @@
+https://charts.mongodb.com/charts-project-0-rzocxfl/embed/dashboards?id=2c0d06fc-2dcf-445c-8bba-c5c798073491&theme=light&autoRefresh=true&maxDataAge=14400&showTitleAndDesc=false&scalingWidth=fixed&scalingHeight=fixed"></iframe>
